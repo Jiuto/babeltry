@@ -1,4 +1,5 @@
+import { str } from "./hello.js";
 var greeting = function(name) {
-    return 'Hello ' + name;
+    return str + ' ' + name;
 }
 export { greeting }

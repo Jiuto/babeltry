@@ -19,8 +19,18 @@ document.write((0, _greeting.greeting)('world'));},'./greeting.js': function (re
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.greeting = undefined;
+
+var _hello = require("./hello.js");
+
 var greeting = function greeting(name) {
-  return 'Hello ' + name;
+  return _hello.str + ' ' + name;
 };
-exports.greeting = greeting;},})
+exports.greeting = greeting;},'./hello.js': function (require, moudle, exports) {"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var str = 'hello';
+exports.str = str;},})
         
